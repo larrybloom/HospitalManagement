@@ -117,9 +117,9 @@ namespace HospitalApp.Services
 
         }
 
-        public async Task<ResponseDto<LoginDto>> LoginAsync(LoginDto loginDto)
+        public async Task<ResponseDto<string>> LoginAsync(LoginDto loginDto)
         {
-            var response = new ResponseDto<LoginDto>();
+            var response = new ResponseDto<string>();
             try
             {
                 var checkUserExist = await _authRepository.FindUserByEmailAsync(loginDto.Email);
@@ -156,6 +156,11 @@ namespace HospitalApp.Services
                     return response;
                 }
                 //write the message for the return
+                response.ErrorMessage = null;
+                response.DisplayMessage = "Login Successful";
+                response.StatusCode = 200;
+                response.Result =  token; 
+
                 return response;
 
             }

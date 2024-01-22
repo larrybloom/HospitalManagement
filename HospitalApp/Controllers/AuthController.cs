@@ -27,8 +27,6 @@ namespace HospitalApp.Controllers
             {
                 return Created("", response);
             }
-
-
             else if (response.StatusCode == 201)
             {
                 return Created("", response);
@@ -76,7 +74,6 @@ namespace HospitalApp.Controllers
             {
                 return Ok(result);
             }
-
             return BadRequest(result);
         }
 
@@ -89,7 +86,6 @@ namespace HospitalApp.Controllers
             {
                 return Ok(result);
             }
-
             return BadRequest(result);
         }
 

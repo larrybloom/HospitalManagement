@@ -7,7 +7,7 @@ namespace HospitalApp.Interfaces
     public interface IAuthService
     {
         Task<ResponseDto<string>> RegisterAsync(RegisterDto registerDto, List<string> roles);
-        Task<ResponseDto<LoginDto>> LoginAsync(LoginDto loginDto);
+        Task<ResponseDto<string>> LoginAsync(LoginDto loginDto);
 
         Task<ResponseDto<string>> ForgotPasswordAsync(string userEmail);
         Task<ResponseDto<string>> ResetPasswordAsync(ResetPassword newPassword);

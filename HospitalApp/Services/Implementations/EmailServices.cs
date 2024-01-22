@@ -25,7 +25,7 @@ namespace HospitalApp.Services.Implementations
         private MimeMessage CreateEmailMessage(Message message)
         {
             var emailMessage = new MimeMessage();
-            emailMessage.From.Add(new MailboxAddress("email", _configuration["EmailConfiguration:UserName"]));
+            emailMessage.From.Add(new MailboxAddress("HMS", _configuration["EmailConfiguration:UserName"]));
             emailMessage.To.AddRange(message.To);
             emailMessage.Subject = message.Subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message.Content };
