@@ -47,6 +47,7 @@ builder.Services.AddScoped<ILabTestService, LabTestService>();
 builder.Services.AddScoped<IMedicationService, MedicationService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEmailServices, EmailService>();
+builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
 
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");

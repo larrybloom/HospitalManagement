@@ -79,10 +79,9 @@ namespace HospitalApp.Data.Context
         public DbSet<Discharge> Discharges { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<UserHospitals> UserHospitals { get; set; }
-
         public DbSet<ConfirmEmailToken> ConfirmEmailTokens { get; set; }
 
-
+        public DbSet<Doctor> Doctors { get; set; }
 
     }
 
