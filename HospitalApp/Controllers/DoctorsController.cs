@@ -16,7 +16,6 @@ namespace HospitalApp.Controllers
         }
 
 
-
         [HttpGet("search")]
         public async Task<IActionResult> SearchDoctors([FromQuery] string searchTerm)
         {
