@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HospitalApp.Model.Entities
+﻿namespace HospitalApp.Model.Entities
 {
     public class Hospital
     {
@@ -17,7 +11,7 @@ namespace HospitalApp.Model.Entities
         public List<Appointment> Appointments { get; set; }
         public List<Diagnosis> Diagnosis { get; set; }
         public List<Medication> Medications { get; set; }
-        public List<UserHospitals> Hospitals { get; set;}
+        public List<UserHospitals> Hospitals { get; set; }
         public List<LaboratoryTest> LaboratoryTests { get; set; }
 
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HospitalApp.Model.Entities
+﻿namespace HospitalApp.Model.Entities
 {
     public class LaboratoryTest
     {
@@ -12,7 +6,7 @@ namespace HospitalApp.Model.Entities
         public Diagnosis Diagnosis { get; set; }
         public string DiagnosisId { get; set; }
 
-        public  string id { get; set; }
+        public string id { get; set; }
         public string Test { get; set; }
         public DateTime Date { get; set; }
         public string Result { get; set; }

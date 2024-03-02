@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace HospitalApp.Model.Entities
+﻿namespace HospitalApp.Model.Entities
 {
     public class Medication
     {
