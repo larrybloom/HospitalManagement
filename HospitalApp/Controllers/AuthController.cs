@@ -19,7 +19,7 @@ namespace HospitalApp.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto, [FromQuery]List<string> roles)
+        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto, [FromQuery] List<string> roles)
         {
             var response = await _authService.RegisterAsync(registerDto, roles);
 
@@ -41,7 +41,7 @@ namespace HospitalApp.Controllers
             }
             else
             {
-                return StatusCode(response.StatusCode,response.ErrorMessage);
+                return StatusCode(response.StatusCode, response.ErrorMessage);
             }
         }
 

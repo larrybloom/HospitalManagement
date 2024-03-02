@@ -46,7 +46,7 @@ namespace HospitalApp.Services
                     return response;
                 }
 
-                
+
                 foreach (var role in roles)
                 {
                     var checkRole = await _authRepository.RoleExist(role);
@@ -159,7 +159,7 @@ namespace HospitalApp.Services
                 response.ErrorMessage = null;
                 response.DisplayMessage = "Login Successful";
                 response.StatusCode = 200;
-                response.Result =  token; 
+                response.Result = token;
 
                 return response;
 
