@@ -1,12 +1,9 @@
 ﻿using HospitalApp.Data.Context;
 using HospitalApp.Data.Repository.Interface;
 using HospitalApp.Model.DTOs;
-using HospitalApp.Model.DTOs.AuthenticationDTOs;
 using HospitalApp.Model.Entities;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.IO;
 
 namespace HospitalApp.Data.Repository.Implementations
 {
