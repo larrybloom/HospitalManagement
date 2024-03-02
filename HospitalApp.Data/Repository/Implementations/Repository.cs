@@ -1,9 +1,6 @@
 ﻿using HospitalApp.Data.Context;
 using HospitalApp.Data.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace HospitalApp.Data.Repository.Implementations
 {
